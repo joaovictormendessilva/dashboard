@@ -1,11 +1,8 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+import Dashboard from "./(pages)/dashboard";
 
 const Home = () => {
-  return (
-    <Box>
-      <Typography>Olá mundo!</Typography>
-    </Box>
-  );
+  return <Dashboard />;
 };
 
 export default Home;
