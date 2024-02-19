@@ -1,8 +1,10 @@
-const useStyles = () => ({
-  container: {},
+const useStyles = (sideMenuWidth: boolean) => ({
+  container: {
+    position: "static",
+  },
 
   content: {
-    minWidth: 200,
+    minWidth: sideMenuWidth ? "200px" : "10px",
     width: "100%",
     height: "100%",
     display: "flex",

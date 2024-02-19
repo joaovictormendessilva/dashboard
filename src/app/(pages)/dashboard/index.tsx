@@ -1,14 +1,7 @@
 import { SideMenu } from "@/app/shared/components/SideMenu";
-import { Box, Typography } from "@mui/material";
-
-const useStyles = () => ({
-  container: {
-    display: "flex",
-    height: "100vh",
-    width: "100%",
-    backgroundColor: "grey",
-  },
-});
+import { Box } from "@mui/material";
+import { MainContent } from "./components/MainContent";
+import { useStyles } from "./styles";
 
 const Dashboard = () => {
   const styles = useStyles();
@@ -16,6 +9,8 @@ const Dashboard = () => {
   return (
     <Box sx={styles.container}>
       <SideMenu />
+
+      <MainContent />
     </Box>
   );
 };
