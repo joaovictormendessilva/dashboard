@@ -6,5 +6,7 @@ export const useStyles = () => ({
       color: green[500],
       fontWeight: "bold",
     },
+
+    tableHead: { backgroundColor: "darkcyan" },
   },
 });

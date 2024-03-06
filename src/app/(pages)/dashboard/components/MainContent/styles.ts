@@ -1,20 +1,16 @@
 export const useStyles = () => ({
   container: {
-    marginLeft: "200px",
-    width: "100%",
+    width: "-webkit-fill-available",
     paddingX: 3,
-    paddingTop: 2,
+    paddingY: 2,
     display: "flex",
     flexDirection: "column",
     gap: 2,
+    marginLeft: { xs: "80px", sm: "80px", md: "170px", lg: "170px" },
   },
 
   cardHeader: {
     padding: 2,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
 
     h1: {
       fontSize: "24px",
@@ -23,6 +19,7 @@ export const useStyles = () => ({
 
     searchAndAvatar: {
       display: "flex",
+      justifyContent: "flex-end",
       flexDirection: "row",
       alignItems: "center",
       gap: 1,

@@ -19,9 +19,9 @@ export const FinancesDataSection = () => {
 
   return (
     <CardSectionLayout title="Finance data">
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead sx={{ backgroundColor: "darkcyan" }}>
+      <TableContainer>
+        <Table size="small">
+          <TableHead sx={styles.container.tableHead}>
             <TableRow>
               <TableCell>Date</TableCell>
               <TableCell>Transaction Type</TableCell>

@@ -1,15 +1,7 @@
-const useStyles = (sideMenuWidth: boolean) => ({
+const useStyles = () => ({
   container: {
-    position: "static",
-  },
-
-  content: {
-    minWidth: sideMenuWidth ? "200px" : "10px",
-    width: "100%",
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
+    top: 20,
+    position: "relative",
   },
 
   list: {
@@ -17,6 +9,15 @@ const useStyles = (sideMenuWidth: boolean) => ({
   },
 
   listItemButton: { display: "flex", gap: 1 },
+
+  listItemButtonName: {
+    display: {
+      xs: "none",
+      sm: "none",
+      md: "block",
+      lg: "block",
+    },
+  },
 });
 
 export default useStyles;
